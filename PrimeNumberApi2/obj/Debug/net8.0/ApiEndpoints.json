@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "PrimeNumberApi2.Controllers.PrimeController",
+    "Method": "IsPrime",
+    "RelativePath": "api/Prime/isprime/{number}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "number",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrimeNumberApi2.Controllers.PrimeController",
+    "Method": "GetVersion",
+    "RelativePath": "api/Prime/version",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
