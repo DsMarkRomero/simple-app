@@ -27,7 +27,7 @@ const PrimeCheck = () => {
     return (
         <div>
             <h1>Prime Number Checker</h1>
-			<h2> Test v13 en MASTER</h2>
+			<h2> Test v14 en MASTER</h2>
             <button onClick={fetchVersion}>Get API Version</button>
             <p>API Version: {version}</p>
             <input
