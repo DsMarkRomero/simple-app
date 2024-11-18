@@ -27,7 +27,7 @@ const PrimeCheck = () => {
     return (
         <div>
             <h1>Prime Number Checker</h1>
-			<h2> Implementación completa v6</h2>
+			<h2> RAMA MASTER v6</h2>
             <button onClick={fetchVersion}>Get API Version</button>
             <p>API Version: {version}</p>
             <input
