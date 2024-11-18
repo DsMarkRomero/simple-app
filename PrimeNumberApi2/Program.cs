@@ -9,9 +9,9 @@ builder.Services.AddDbContext<PrimeNumberContext>(options =>
         sqlOptions => sqlOptions.EnableRetryOnFailure()));
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowSpecificOrigins", policy =>
+    options.AddPolicy("AllowAllOrigins", policy =>
     {
-        policy.WithOrigins("http://localhost:30070") // Cambia este valor si el frontend se mueve
+        policy.AllowAnyOrigin()
               .AllowAnyMethod()
               .AllowAnyHeader();
     });
@@ -29,7 +29,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors("AllowSpecificOrigins");
+app.UseCors("AllowAllOrigins");
 
 app.UseAuthorization();
 
