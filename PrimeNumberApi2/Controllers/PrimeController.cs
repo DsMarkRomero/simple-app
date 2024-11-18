@@ -42,7 +42,7 @@ namespace PrimeNumberApi2.Controllers
         [HttpGet("version")]
         public IActionResult GetVersion()
         {
-            return Ok(new { Version = "1.0" });
+            return Ok(new { Version = "2.0" });
         }
 
         // Función privada para verificar si un número es primo
