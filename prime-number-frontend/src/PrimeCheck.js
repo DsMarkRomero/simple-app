@@ -8,7 +8,7 @@ const PrimeCheck = () => {
 
     const fetchVersion = async () => {
         try {
-            const response = await axios.get('http://localhost:31594/api/prime/version');
+            const response = await axios.get('api/prime/version');
             setVersion(response.data.version);
         } catch (error) {
             console.error('Error fetching API version:', error);
@@ -17,7 +17,7 @@ const PrimeCheck = () => {
 
     const checkPrime = async () => {
         try {
-            const response = await axios.get(`http://localhost:31594/api/prime/isprime/${number}`);
+            const response = await axios.get(`api/prime/isprime/${number}`);
             setResult(response.data);
         } catch (error) {
             console.error('Error checking prime number:', error);
